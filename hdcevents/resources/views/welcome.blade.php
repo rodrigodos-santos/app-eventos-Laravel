@@ -1,33 +1,36 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.main')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('title', 'RDS Events')
 
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/app.css" />
-</head>
-
-<body>
+@section('content')
     <h1>Algum Título</h1>
-    @if(10 > 15)
-    <p>A Condição é True</p>
+
+    @if (10 > 15)
+        <p>A Condição é True</p>
     @endif
 
     <p>{{ $nome }}</p>
 
-    @if($nome == "Pedro")
-    <p>O nome é Pedro</p>
+    @if ($nome == 'Pedro')
+        <p>O nome é Pedro</p>
     @elseif($nome == "Rodrigo")
-    <p>O nome é {{$nome}} e ele tem {{$idade2}} anos, e trabalho como {{$profissao}}</p>
+        <p>O nome é {{ $nome }} e ele tem {{ $idade2 }} anos, e trabalho como {{ $profissao }}</p>
     @else
-    <p>O nome não é Rodrigo</p>
+        <p>O nome não é Rodrigo</p>
     @endif
 
-</body>
+    @for ($i = 0; $i < count($arr); $i++)
+        <p>{{ $arr[$i] }} - {{ $i }}</p>
+        @if ($i == 2)
+            <p>O i é 2</p>
+        @endif
+    @endfor
 
-</html>
+    @php
+    $name = 'João';
+    echo $name;
+    @endphp
+
+    {{-- Este é um comentário do Blade --}}
+
+@endsection
