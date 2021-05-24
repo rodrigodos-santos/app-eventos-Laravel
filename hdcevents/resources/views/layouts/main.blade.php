@@ -42,7 +42,7 @@
                 </div>
             </nav>
         </header>
-
+ 
         @yield('content')
 
         <footer>
@@ -50,5 +50,4 @@
         </footer>
         <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
     </body>
-
 </html>
