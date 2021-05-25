@@ -55,6 +55,6 @@
         <footer>
             <p>RDS Events &copy; 2021</p>
         </footer>
-        <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>
 </html>
