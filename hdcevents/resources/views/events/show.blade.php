@@ -14,7 +14,7 @@
                     <ion-icon name="location-outline"></ion-icon>{{ $event->city }}
                 </p>
                 <p class="events-participants">
-                    <ion-icon name="people-outline"></ion-icon> {{count($event->users)}} Participantes
+                    <ion-icon name="people-outline"></ion-icon> X Participantes
                 </p>
                 <p class="event-owner">
                     <ion-icon name="star-outline"></ion-icon> {{ $eventOwner['name'] }}
