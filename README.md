@@ -1,2 +1,2 @@
-# app-eventos-Laravel (EM DESENVOLVIMENTO)
+# app-eventos-Laravel
  Aplicativo para registro de eventos desenvolvido em Laravel
