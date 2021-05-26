@@ -99,7 +99,7 @@ class EventController extends Controller
 
         $events = $user->events;
 
-        $eventsAsParticipant = $user->eventsAsParticipant->toArray();
+        $eventsAsParticipant = $user->eventsAsParticipant;
 
         return view(
             'events.dashboard',
